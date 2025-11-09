@@ -1,0 +1,441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09A0CCCC5EC4B03E660E6B0C /* libAtomica-Engine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87D8B3145F2BDE46D8994954 /* libAtomica-Engine.a */; };
+		1817955824A247CA9F871398 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5C1300C9792D32A5828940 /* CoreFoundation.framework */; };
+		189D0772729E1E6439E515B2 /* imgui_impl_opengl3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57804E1A724CBCCC761D545A /* imgui_impl_opengl3.cpp */; };
+		5F437C0E2203DC807F38BA4E /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59EFFDF63E370628C2243436 /* imgui_widgets.cpp */; };
+		6308CDA25CCA8A1496C98BE2 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85B39C4ACE24807C12C3528A /* imgui.cpp */; };
+		64F04AD606D9E6C8FE00F916 /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1D2FF3E7FF652F00704A57E /* imgui_tables.cpp */; };
+		7126958CC7B3FFFEA02D13CC /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E684C9F4E9F59C266B624034 /* Main.cpp */; };
+		713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BACC980CF188B320DBC2FC0 /* IOKit.framework */; };
+		840EA602F136B474F2C9A442 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19352E0A6698243CDCB7244A /* OpenGL.framework */; };
+		9223EFD8340D8BCA2B349E18 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606C44802E8F9832B59DEAC0 /* CoreVideo.framework */; };
+		C7C8F36A1F2E665CD13C81AA /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59836E928B7CB944055BF4D2 /* imgui_demo.cpp */; };
+		F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */; };
+		FC301A22F02F6394751A7862 /* imgui_impl_glfw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 891ACACACD2E9BFCC100210A /* imgui_impl_glfw.cpp */; };
+		FE580E1C55BD810E07CB9C5C /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2FA7724D4F3C1D64ED2FD64 /* imgui_draw.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23CC185C712F0E8EE74E0E9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23FFAFBD1167426FAE6135FD /* ../Atomica-Engine/Atomica-Engine.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 921C2D16E8A99788C122AB56;
+			remoteInfo = "libAtomica-Engine.a";
+		};
+		D191A5C31EF49BF595139C03 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23FFAFBD1167426FAE6135FD /* ../Atomica-Engine/Atomica-Engine.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8FDEFB30B819B3E29FB54170;
+			remoteInfo = "libAtomica-Engine.a";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BACC980CF188B320DBC2FC0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		11D824A4AA250A56D86C0AE4 /* imgui_impl_opengl3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui_impl_opengl3.h; path = Source/imgui/imgui_impl_opengl3.h; sourceTree = "<group>"; };
+		19352E0A6698243CDCB7244A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1C2B3630EA4E89E2715CDC70 /* imstb_textedit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imstb_textedit.h; path = Source/imgui/imstb_textedit.h; sourceTree = "<group>"; };
+		1D56DFDEEB7A33907288861E /* imstb_truetype.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imstb_truetype.h; path = Source/imgui/imstb_truetype.h; sourceTree = "<group>"; };
+		23FFAFBD1167426FAE6135FD /* libAtomica-Engine.a */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Atomica-Engine.xcodeproj; path = "../Atomica-Engine/Atomica-Engine.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		418A1C7669C4D528516062B6 /* Interface.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Interface.hpp; path = Source/Interface.hpp; sourceTree = "<group>"; };
+		57804E1A724CBCCC761D545A /* imgui_impl_opengl3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_opengl3.cpp; path = Source/imgui/imgui_impl_opengl3.cpp; sourceTree = "<group>"; };
+		59836E928B7CB944055BF4D2 /* imgui_demo.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_demo.cpp; path = Source/imgui/imgui_demo.cpp; sourceTree = "<group>"; };
+		59EFFDF63E370628C2243436 /* imgui_widgets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_widgets.cpp; path = Source/imgui/imgui_widgets.cpp; sourceTree = "<group>"; };
+		606C44802E8F9832B59DEAC0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		725EDE85BACFC2B7FF6E94C5 /* Atomica-Interface */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = "Atomica-Interface"; path = "Atomica-Interface"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85B39C4ACE24807C12C3528A /* imgui.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui.cpp; path = Source/imgui/imgui.cpp; sourceTree = "<group>"; };
+		891ACACACD2E9BFCC100210A /* imgui_impl_glfw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_glfw.cpp; path = Source/imgui/imgui_impl_glfw.cpp; sourceTree = "<group>"; };
+		8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8F57E6F45D7B3AA6E4898D34 /* imstb_rectpack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imstb_rectpack.h; path = Source/imgui/imstb_rectpack.h; sourceTree = "<group>"; };
+		971DC9747B64D1A6FF51FFB4 /* imgui_impl_glfw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui_impl_glfw.h; path = Source/imgui/imgui_impl_glfw.h; sourceTree = "<group>"; };
+		A2FA7724D4F3C1D64ED2FD64 /* imgui_draw.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_draw.cpp; path = Source/imgui/imgui_draw.cpp; sourceTree = "<group>"; };
+		A312F476CB4DAD28B2E93AB6 /* imconfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imconfig.h; path = Source/imgui/imconfig.h; sourceTree = "<group>"; };
+		B1D2FF3E7FF652F00704A57E /* imgui_tables.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_tables.cpp; path = Source/imgui/imgui_tables.cpp; sourceTree = "<group>"; };
+		BDBBC4CC8BDF187E12ED6B0C /* imgui_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui_internal.h; path = Source/imgui/imgui_internal.h; sourceTree = "<group>"; };
+		E684C9F4E9F59C266B624034 /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = Source/Main.cpp; sourceTree = "<group>"; };
+		EA5C1300C9792D32A5828940 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F14C40B4085EDBE6F87AD6F4 /* imgui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui.h; path = Source/imgui/imgui.h; sourceTree = "<group>"; };
+		F9696270938D57A243B338B0 /* imgui_impl_opengl3_loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = imgui_impl_opengl3_loader.h; path = Source/imgui/imgui_impl_opengl3_loader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03A459751AB6F4A70AD2EFB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840EA602F136B474F2C9A442 /* OpenGL.framework in Frameworks */,
+				F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */,
+				713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */,
+				9223EFD8340D8BCA2B349E18 /* CoreVideo.framework in Frameworks */,
+				1817955824A247CA9F871398 /* CoreFoundation.framework in Frameworks */,
+				09A0CCCC5EC4B03E660E6B0C /* libAtomica-Engine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		53EBDB217A120AD3E1190161 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D968EAA920D05DCE0E0A4EA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				23FFAFBD1167426FAE6135FD /* Atomica-Engine.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		A1367A7CADF329EE22DD98BC /* Atomica-Interface */ = {
+			isa = PBXGroup;
+			children = (
+				418A1C7669C4D528516062B6 /* Interface.hpp */,
+				E684C9F4E9F59C266B624034 /* Main.cpp */,
+				E93F539E3952E850BBD119DE /* imgui */,
+				BBF76781A7E87333FA200DC1 /* Frameworks */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+				9D968EAA920D05DCE0E0A4EA /* Projects */,
+			);
+			name = "Atomica-Interface";
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				725EDE85BACFC2B7FF6E94C5 /* Atomica-Interface */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBF76781A7E87333FA200DC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19352E0A6698243CDCB7244A /* OpenGL.framework */,
+				8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */,
+				0BACC980CF188B320DBC2FC0 /* IOKit.framework */,
+				606C44802E8F9832B59DEAC0 /* CoreVideo.framework */,
+				EA5C1300C9792D32A5828940 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5D206A3F6B5FE9509CE34E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87D8B3145F2BDE46D8994954 /* libAtomica-Engine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E93F539E3952E850BBD119DE /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				A312F476CB4DAD28B2E93AB6 /* imconfig.h */,
+				85B39C4ACE24807C12C3528A /* imgui.cpp */,
+				F14C40B4085EDBE6F87AD6F4 /* imgui.h */,
+				59836E928B7CB944055BF4D2 /* imgui_demo.cpp */,
+				A2FA7724D4F3C1D64ED2FD64 /* imgui_draw.cpp */,
+				891ACACACD2E9BFCC100210A /* imgui_impl_glfw.cpp */,
+				971DC9747B64D1A6FF51FFB4 /* imgui_impl_glfw.h */,
+				57804E1A724CBCCC761D545A /* imgui_impl_opengl3.cpp */,
+				11D824A4AA250A56D86C0AE4 /* imgui_impl_opengl3.h */,
+				F9696270938D57A243B338B0 /* imgui_impl_opengl3_loader.h */,
+				BDBBC4CC8BDF187E12ED6B0C /* imgui_internal.h */,
+				B1D2FF3E7FF652F00704A57E /* imgui_tables.cpp */,
+				59EFFDF63E370628C2243436 /* imgui_widgets.cpp */,
+				8F57E6F45D7B3AA6E4898D34 /* imstb_rectpack.h */,
+				1C2B3630EA4E89E2715CDC70 /* imstb_textedit.h */,
+				1D56DFDEEB7A33907288861E /* imstb_truetype.h */,
+			);
+			name = imgui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDD279CBE8BE9FBD30A4680B /* Atomica-Interface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1DFA1D408F23D06F90E3814 /* Build configuration list for PBXNativeTarget "Atomica-Interface" */;
+			buildPhases = (
+				738BDA158A9E75477ABA7055 /* Resources */,
+				DD38F36CF44B8E9EE46789AC /* Sources */,
+				03A459751AB6F4A70AD2EFB5 /* Frameworks */,
+				53EBDB217A120AD3E1190161 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B38A43ACE46E3B9EF78671EC /* PBXTargetDependency */,
+			);
+			name = "Atomica-Interface";
+			productInstallPath = "$(HOME)/bin";
+			productName = "Atomica-Interface";
+			productReference = 725EDE85BACFC2B7FF6E94C5 /* Atomica-Interface */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Atomica-Interface" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = A1367A7CADF329EE22DD98BC /* Atomica-Interface */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C5D206A3F6B5FE9509CE34E3 /* Products */;
+					ProjectRef = 23FFAFBD1167426FAE6135FD /* Atomica-Engine.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FDD279CBE8BE9FBD30A4680B /* Atomica-Interface */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		87D8B3145F2BDE46D8994954 /* libAtomica-Engine.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libAtomica-Engine.a";
+			remoteRef = D191A5C31EF49BF595139C03 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		738BDA158A9E75477ABA7055 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD38F36CF44B8E9EE46789AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7126958CC7B3FFFEA02D13CC /* Main.cpp in Sources */,
+				6308CDA25CCA8A1496C98BE2 /* imgui.cpp in Sources */,
+				C7C8F36A1F2E665CD13C81AA /* imgui_demo.cpp in Sources */,
+				FE580E1C55BD810E07CB9C5C /* imgui_draw.cpp in Sources */,
+				FC301A22F02F6394751A7862 /* imgui_impl_glfw.cpp in Sources */,
+				189D0772729E1E6439E515B2 /* imgui_impl_opengl3.cpp in Sources */,
+				64F04AD606D9E6C8FE00F916 /* imgui_tables.cpp in Sources */,
+				5F437C0E2203DC807F38BA4E /* imgui_widgets.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B38A43ACE46E3B9EF78671EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libAtomica-Engine.a";
+			targetProxy = 23CC185C712F0E8EE74E0E9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		135B768B3981A63DA0889CCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++2a";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MACOS,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"../Dependencies/lib-arm64",
+				);
+				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Debug/Atomica-Interface";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
+				SYMROOT = "../Binaries/macosx-ARM64/Debug/Atomica-Interface";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					../Dependencies/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					Source,
+					"../Atomica-Engine/Include",
+					"../Atomica-Engine/Source",
+				);
+			};
+			name = Debug;
+		};
+		4C7B1F8594EC03B7D98AD5C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++2a";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MACOS,
+					RELEASE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"../Dependencies/lib-arm64",
+				);
+				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Release/Atomica-Interface";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
+				SYMROOT = "../Binaries/macosx-ARM64/Release/Atomica-Interface";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					../Dependencies/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					Source,
+					"../Atomica-Engine/Include",
+					"../Atomica-Engine/Source",
+				);
+			};
+			name = Release;
+		};
+		7FD1149ACD340ACC43530ADA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../Binaries/macosx-ARM64/Debug/Atomica-Interface";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Atomica-Interface";
+			};
+			name = Debug;
+		};
+		9A02C8589368C9CA87042698 /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++2a";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MACOS,
+					DIST,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"../Dependencies/lib-arm64",
+				);
+				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Dist/Atomica-Interface";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
+				SYMROOT = "../Binaries/macosx-ARM64/Dist/Atomica-Interface";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					../Dependencies/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					Source,
+					"../Atomica-Engine/Include",
+					"../Atomica-Engine/Source",
+				);
+			};
+			name = Dist;
+		};
+		E3CECAA714B2C29927CAF8E7 /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../Binaries/macosx-ARM64/Dist/Atomica-Interface";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Atomica-Interface";
+			};
+			name = Dist;
+		};
+		FF2BBE14312508C6AB044454 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../Binaries/macosx-ARM64/Release/Atomica-Interface";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = "Atomica-Interface";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Atomica-Interface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				135B768B3981A63DA0889CCB /* Debug */,
+				4C7B1F8594EC03B7D98AD5C5 /* Release */,
+				9A02C8589368C9CA87042698 /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1DFA1D408F23D06F90E3814 /* Build configuration list for PBXNativeTarget "Atomica-Interface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD1149ACD340ACC43530ADA /* Debug */,
+				FF2BBE14312508C6AB044454 /* Release */,
+				E3CECAA714B2C29927CAF8E7 /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

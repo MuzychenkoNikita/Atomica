@@ -1,0 +1,375 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1817955824A247CA9F871398 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5C1300C9792D32A5828940 /* CoreFoundation.framework */; };
+		713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BACC980CF188B320DBC2FC0 /* IOKit.framework */; };
+		7AEA8CAED24FFFA0845E1AEE /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28DCDA765AD62528D4B560B6 /* Shaders.cpp */; };
+		840EA602F136B474F2C9A442 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19352E0A6698243CDCB7244A /* OpenGL.framework */; };
+		9223EFD8340D8BCA2B349E18 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 606C44802E8F9832B59DEAC0 /* CoreVideo.framework */; };
+		93DA45998D9C020BC79B03D9 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E7C2A19D58A6D3E1F778E1 /* glad.c */; };
+		D0325CE492F2BD56F0279B24 /* Graphics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B309FCC2F77A7FEB364D60C /* Graphics.cpp */; };
+		F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */; };
+		FBE683AC4035291E825C61EC /* Core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8A6B5394AC3700C6E8EC29D4 /* Core.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0BACC980CF188B320DBC2FC0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		19352E0A6698243CDCB7244A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		28DCDA765AD62528D4B560B6 /* Shaders.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Shaders.cpp; path = Source/Core/Shaders.cpp; sourceTree = "<group>"; };
+		433B66F98BAC4B2BD04B1D39 /* Core.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Core.hpp; path = Include/Core.hpp; sourceTree = "<group>"; };
+		4B309FCC2F77A7FEB364D60C /* Graphics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Graphics.cpp; path = Source/Graphics/Graphics.cpp; sourceTree = "<group>"; };
+		54E7C2A19D58A6D3E1F778E1 /* glad.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = glad.c; path = Source/Glad/glad.c; sourceTree = "<group>"; };
+		606C44802E8F9832B59DEAC0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		8918FCC9D67BF2FB4C9AF309 /* Graphics.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Graphics.hpp; path = Include/Graphics.hpp; sourceTree = "<group>"; };
+		8A6B5394AC3700C6E8EC29D4 /* Core.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Core.cpp; path = Source/Core/Core.cpp; sourceTree = "<group>"; };
+		8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8FDEFB30B819B3E29FB54170 /* libAtomica-Engine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libAtomica-Engine.a"; path = "libAtomica-Engine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA5C1300C9792D32A5828940 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CF2D8A053190852BA1FFEE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840EA602F136B474F2C9A442 /* OpenGL.framework in Frameworks */,
+				F8E8DBA28B76A594F44F49E2 /* Cocoa.framework in Frameworks */,
+				713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */,
+				9223EFD8340D8BCA2B349E18 /* CoreVideo.framework in Frameworks */,
+				1817955824A247CA9F871398 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0AD6D10C5347B53E97E6874C /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F3B4FEA1A2775DC620D3E2A /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				4B309FCC2F77A7FEB364D60C /* Graphics.cpp */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		58872CEAFBD2B61C16A3832A /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6C476F9A9AEDC38CF42F1DDA /* Core */,
+				A9740BD8D81A5FCA315BBA18 /* Glad */,
+				2F3B4FEA1A2775DC620D3E2A /* Graphics */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		5D6C761001BF13C213F75C50 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				433B66F98BAC4B2BD04B1D39 /* Core.hpp */,
+				8918FCC9D67BF2FB4C9AF309 /* Graphics.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		6C476F9A9AEDC38CF42F1DDA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8A6B5394AC3700C6E8EC29D4 /* Core.cpp */,
+				28DCDA765AD62528D4B560B6 /* Shaders.cpp */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		750DBC21C52150D3479F8261 /* Atomica-Engine */ = {
+			isa = PBXGroup;
+			children = (
+				5D6C761001BF13C213F75C50 /* Include */,
+				58872CEAFBD2B61C16A3832A /* Source */,
+				BBF76781A7E87333FA200DC1 /* Frameworks */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+			);
+			name = "Atomica-Engine";
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8FDEFB30B819B3E29FB54170 /* libAtomica-Engine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9740BD8D81A5FCA315BBA18 /* Glad */ = {
+			isa = PBXGroup;
+			children = (
+				54E7C2A19D58A6D3E1F778E1 /* glad.c */,
+			);
+			name = Glad;
+			sourceTree = "<group>";
+		};
+		BBF76781A7E87333FA200DC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19352E0A6698243CDCB7244A /* OpenGL.framework */,
+				8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */,
+				0BACC980CF188B320DBC2FC0 /* IOKit.framework */,
+				606C44802E8F9832B59DEAC0 /* CoreVideo.framework */,
+				EA5C1300C9792D32A5828940 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		921C2D16E8A99788C122AB56 /* Atomica-Engine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B2E20FF415450B1A85B473F /* Build configuration list for PBXNativeTarget "Atomica-Engine" */;
+			buildPhases = (
+				9CDA5940C30088F22A077F80 /* Resources */,
+				068772972CADA24993B498D7 /* Sources */,
+				2CF2D8A053190852BA1FFEE0 /* Frameworks */,
+				0AD6D10C5347B53E97E6874C /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Atomica-Engine";
+			productName = "Atomica-Engine";
+			productReference = 8FDEFB30B819B3E29FB54170 /* libAtomica-Engine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Atomica-Engine" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 750DBC21C52150D3479F8261 /* Atomica-Engine */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				921C2D16E8A99788C122AB56 /* libAtomica-Engine.a */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CDA5940C30088F22A077F80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		068772972CADA24993B498D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBE683AC4035291E825C61EC /* Core.cpp in Sources */,
+				7AEA8CAED24FFFA0845E1AEE /* Shaders.cpp in Sources */,
+				93DA45998D9C020BC79B03D9 /* glad.c in Sources */,
+				D0325CE492F2BD56F0279B24 /* Graphics.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01BFDEFDA4AE05AF33D3E53D /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++2a";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MACOS,
+					DIST,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"../Dependencies/lib-arm64",
+				);
+				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Dist/Atomica-Engine";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
+				SYMROOT = "../Binaries/macosx-ARM64/Dist/Atomica-Engine";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					../Dependencies/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					Source,
+					Include,
+				);
+			};
+			name = Dist;
+		};
+		0382F00AFCE8F17CF0844E4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++2a";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MACOS,
+					RELEASE,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"../Dependencies/lib-arm64",
+				);
+				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Release/Atomica-Engine";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
+				SYMROOT = "../Binaries/macosx-ARM64/Release/Atomica-Engine";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					../Dependencies/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					Source,
+					Include,
+				);
+			};
+			name = Release;
+		};
+		356BEC7FCAE2ABB1397F02BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../Binaries/macosx-ARM64/Release/Atomica-Engine";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "Atomica-Engine";
+			};
+			name = Release;
+		};
+		72BB61D0736E5EC2E7503010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++2a";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					MACOS,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					"../Dependencies/lib-arm64",
+				);
+				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Debug/Atomica-Engine";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lglfw3",
+				);
+				SYMROOT = "../Binaries/macosx-ARM64/Debug/Atomica-Engine";
+				SYSTEM_HEADER_SEARCH_PATHS = (
+					../Dependencies/include,
+					"$(inherited)",
+				);
+				USER_HEADER_SEARCH_PATHS = (
+					Source,
+					Include,
+				);
+			};
+			name = Debug;
+		};
+		88CCAC45BAC5F6F734A53285 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../Binaries/macosx-ARM64/Debug/Atomica-Engine";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "Atomica-Engine";
+			};
+			name = Debug;
+		};
+		D49098F2CE52556408515732 /* Dist */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = "../Binaries/macosx-ARM64/Dist/Atomica-Engine";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = "Atomica-Engine";
+			};
+			name = Dist;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B2E20FF415450B1A85B473F /* Build configuration list for PBXNativeTarget "libAtomica-Engine.a" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88CCAC45BAC5F6F734A53285 /* Debug */,
+				356BEC7FCAE2ABB1397F02BF /* Release */,
+				D49098F2CE52556408515732 /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "Atomica-Engine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				72BB61D0736E5EC2E7503010 /* Debug */,
+				0382F00AFCE8F17CF0844E4A /* Release */,
+				01BFDEFDA4AE05AF33D3E53D /* Dist */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
