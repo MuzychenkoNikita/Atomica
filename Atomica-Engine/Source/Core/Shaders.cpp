@@ -28,19 +28,17 @@ void InitAtomShader() {
     uniform float iTime;
     uniform vec2 iResolution;
 
-    // output
     out vec4 fragColor;
 
     #define MAX_STEPS 140
     #define MAX_DIST 80.0
     #define SURF_DIST 0.001
 
-    // --- nucleus configuration (make these uniforms if you want runtime control)
-    int numProtons = 2;
-    int numNeutrons = 4;
+    uniform int numProtons;
+    uniform int numNeutrons;
 
     // --- electrons on rings
-    int eCount[7] = int[7](2, 3, 5, 0, 0, 0, 0);
+    uniform int eCount[7];
 
     float baseRadius = 0.2;
     float orbitGap   = 0.2;
@@ -89,9 +87,6 @@ void InitAtomShader() {
         planeNormal = R * vec3(0.0, 1.0, 0.0);
     }
 
-    //-------------------------------------------------------------
-    // Nucleus structure: packed cluster using Fibonacci sphere
-    //-------------------------------------------------------------
     vec3 nucleusPos(int i, int total){
         float offset = 2.0/float(total);
         float inc = PI * (3.0 - sqrt(5.0)); // golden angle
@@ -105,9 +100,6 @@ void InitAtomShader() {
         return dir * nucleusRadius;
     }
 
-    //-------------------------------------------------------------
-    // Scene map
-    //-------------------------------------------------------------
     float map(vec3 p) {
         float d = 1e6;
 
@@ -139,10 +131,6 @@ void InitAtomShader() {
 
         return d;
     }
-
-    //-------------------------------------------------------------
-    // Helpers
-    //-------------------------------------------------------------
     vec3 calcNormal(vec3 p){
         float e=0.0008;
         vec2 k=vec2(1.0,-1.0);
@@ -166,9 +154,6 @@ void InitAtomShader() {
         hit = 0; return t;
     }
 
-    //-------------------------------------------------------------
-    // Shading
-    //-------------------------------------------------------------
     vec3 shade(vec3 pos, vec3 ro){
         vec3 nrm = calcNormal(pos);
         vec3 lightDir = normalize(vec3(0.4,0.8,-0.5));
@@ -181,13 +166,13 @@ void InitAtomShader() {
             vec3 p = nucleusPos(i,total);
             if(length(pos - p) < particleRadius + 0.02){
                 if(i < numProtons)
-                    return vec3(1.0,0.1,0.1)*(0.4+0.6*diff) + vec3(spec); // proton red
+                    return vec3(1.0,0.1,0.1)*(0.4+0.6*diff) + vec3(spec);
                 else
-                    return vec3(1.0)*(0.3+0.7*diff) + vec3(spec); // neutron white
+                    return vec3(1.0)*(0.3+0.7*diff) + vec3(spec);
             }
         }
 
-        // electrons (emissive blue)
+        // electrons
         float bestED = 1e6;
         for(int i=0;i<7;i++){
             if(eCount[i]<=0) continue;
@@ -209,7 +194,7 @@ void InitAtomShader() {
             return blue * glow + vec3(0.1);
         }
 
-        // rings (white)
+        // rings
         float bestR = 1e6;
         for(int i=0;i<7;i++){
             if(eCount[i]<=0) continue;
@@ -227,14 +212,11 @@ void InitAtomShader() {
         return vec3(0.02,0.05,0.1) + 0.5*diff;
     }
 
-    //-------------------------------------------------------------
-    // Main render
-    //-------------------------------------------------------------
     void main(){
         vec2 fragCoord = gl_FragCoord.xy;
         vec2 uv = (fragCoord - 0.5 * iResolution.xy) / iResolution.y;
         float camOrbit = iTime * 0.2;
-        vec3 ro = vec3(sin(camOrbit)*4.0, 3.0, cos(camOrbit)*4.0);
+        vec3 ro = vec3(sin(camOrbit)*4.3, 3.0, cos(camOrbit)*4.3);
         vec3 target = vec3(0.0);
         vec3 f = normalize(target - ro);
         vec3 r = normalize(cross(vec3(0.0,1.0,0.0), f));

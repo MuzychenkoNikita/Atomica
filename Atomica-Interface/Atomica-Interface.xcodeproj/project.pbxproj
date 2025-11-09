@@ -285,15 +285,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"../Dependencies/lib-arm64",
+					/opt/homebrew/opt/curl/lib,
 				);
 				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Debug/Atomica-Interface";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lglfw3",
+					"-lcurl",
 				);
 				SYMROOT = "../Binaries/macosx-ARM64/Debug/Atomica-Interface";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					../Dependencies/include,
+					/opt/homebrew/opt/curl/include,
 					"$(inherited)",
 				);
 				USER_HEADER_SEARCH_PATHS = (
@@ -322,15 +325,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"../Dependencies/lib-arm64",
+					/opt/homebrew/opt/curl/lib,
 				);
 				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Release/Atomica-Interface";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lglfw3",
+					"-lcurl",
 				);
 				SYMROOT = "../Binaries/macosx-ARM64/Release/Atomica-Interface";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					../Dependencies/include,
+					/opt/homebrew/opt/curl/include,
 					"$(inherited)",
 				);
 				USER_HEADER_SEARCH_PATHS = (
@@ -370,15 +376,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"../Dependencies/lib-arm64",
+					/opt/homebrew/opt/curl/lib,
 				);
 				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Dist/Atomica-Interface";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lglfw3",
+					"-lcurl",
 				);
 				SYMROOT = "../Binaries/macosx-ARM64/Dist/Atomica-Interface";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					../Dependencies/include,
+					/opt/homebrew/opt/curl/include,
 					"$(inherited)",
 				);
 				USER_HEADER_SEARCH_PATHS = (

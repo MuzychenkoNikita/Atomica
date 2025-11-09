@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1817955824A247CA9F871398 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA5C1300C9792D32A5828940 /* CoreFoundation.framework */; };
+		681A7EFE4C618730D04EB53E /* Judge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DF226BC61EA18CF7A2066 /* Judge.cpp */; };
 		713678D803C442CA6C9CE718 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BACC980CF188B320DBC2FC0 /* IOKit.framework */; };
 		7AEA8CAED24FFFA0845E1AEE /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 28DCDA765AD62528D4B560B6 /* Shaders.cpp */; };
 		840EA602F136B474F2C9A442 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19352E0A6698243CDCB7244A /* OpenGL.framework */; };
@@ -28,8 +29,11 @@
 		606C44802E8F9832B59DEAC0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 		8918FCC9D67BF2FB4C9AF309 /* Graphics.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Graphics.hpp; path = Include/Graphics.hpp; sourceTree = "<group>"; };
 		8A6B5394AC3700C6E8EC29D4 /* Core.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Core.cpp; path = Source/Core/Core.cpp; sourceTree = "<group>"; };
+		8B7DF226BC61EA18CF7A2066 /* Judge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Judge.cpp; path = Source/Judge/Judge.cpp; sourceTree = "<group>"; };
 		8D6BC6AA50D7885C8F7B2CEA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		8FDEFB30B819B3E29FB54170 /* libAtomica-Engine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libAtomica-Engine.a"; path = "libAtomica-Engine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB20859EE7DB58B2B32DE99 /* Gemini.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemini.hpp; path = Include/Gemini.hpp; sourceTree = "<group>"; };
+		D9CC08050206C0B7E9A24E45 /* Judge.hpp */ = {isa = PBXFileReference; lastKnownFileType = text; name = Judge.hpp; path = Include/Judge.hpp; sourceTree = "<group>"; };
 		EA5C1300C9792D32A5828940 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -62,6 +66,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXGroup section */
+		177631C689014A3838027006 /* Judge */ = {
+			isa = PBXGroup;
+			children = (
+				8B7DF226BC61EA18CF7A2066 /* Judge.cpp */,
+			);
+			name = Judge;
+			sourceTree = "<group>";
+		};
 		2F3B4FEA1A2775DC620D3E2A /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +88,7 @@
 				6C476F9A9AEDC38CF42F1DDA /* Core */,
 				A9740BD8D81A5FCA315BBA18 /* Glad */,
 				2F3B4FEA1A2775DC620D3E2A /* Graphics */,
+				177631C689014A3838027006 /* Judge */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -84,7 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				433B66F98BAC4B2BD04B1D39 /* Core.hpp */,
+				CCB20859EE7DB58B2B32DE99 /* Gemini.hpp */,
 				8918FCC9D67BF2FB4C9AF309 /* Graphics.hpp */,
+				D9CC08050206C0B7E9A24E45 /* Judge.hpp */,
 			);
 			name = Include;
 			sourceTree = "<group>";
@@ -194,6 +209,7 @@
 				7AEA8CAED24FFFA0845E1AEE /* Shaders.cpp in Sources */,
 				93DA45998D9C020BC79B03D9 /* glad.c in Sources */,
 				D0325CE492F2BD56F0279B24 /* Graphics.cpp in Sources */,
+				681A7EFE4C618730D04EB53E /* Judge.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,15 +236,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"../Dependencies/lib-arm64",
+					/opt/homebrew/opt/curl/lib,
 				);
 				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Dist/Atomica-Engine";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lglfw3",
+					"-lcurl",
 				);
 				SYMROOT = "../Binaries/macosx-ARM64/Dist/Atomica-Engine";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					../Dependencies/include,
+					/opt/homebrew/opt/curl/include,
 					"$(inherited)",
 				);
 				USER_HEADER_SEARCH_PATHS = (
@@ -256,15 +275,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"../Dependencies/lib-arm64",
+					/opt/homebrew/opt/curl/lib,
 				);
 				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Release/Atomica-Engine";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lglfw3",
+					"-lcurl",
 				);
 				SYMROOT = "../Binaries/macosx-ARM64/Release/Atomica-Engine";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					../Dependencies/include,
+					/opt/homebrew/opt/curl/include,
 					"$(inherited)",
 				);
 				USER_HEADER_SEARCH_PATHS = (
@@ -305,15 +327,18 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = (
 					"../Dependencies/lib-arm64",
+					/opt/homebrew/opt/curl/lib,
 				);
 				OBJROOT = "../Binaries/Intermediates/macosx-ARM64/Debug/Atomica-Engine";
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-lglfw3",
+					"-lcurl",
 				);
 				SYMROOT = "../Binaries/macosx-ARM64/Debug/Atomica-Engine";
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					../Dependencies/include,
+					/opt/homebrew/opt/curl/include,
 					"$(inherited)",
 				);
 				USER_HEADER_SEARCH_PATHS = (

@@ -13,12 +13,11 @@
 void processInput(GLFWwindow* window);
 
 int main() {
+    curl_global_init(CURL_GLOBAL_DEFAULT);
     Atomica::InitiateCore();
 
     Atomica::InitiateInterface();
 
-    // render loop
-    // -----------
     while (!glfwWindowShouldClose(Atomica::window)) {
         glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -35,17 +34,13 @@ int main() {
     Atomica::DestroyInterface();
 
     glfwTerminate();
+    curl_global_cleanup();
     return 0;
 }
 
-// process all input: query GLFW whether relevant keys are pressed/released this frame and react accordingly
-// ---------------------------------------------------------------------------------------------------------
 void processInput(GLFWwindow* window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
 }
-
-// glfw: whenever the window size changed (by OS or user resize) this callback function executes
-// ---------------------------------------------------------------------------------------------
 

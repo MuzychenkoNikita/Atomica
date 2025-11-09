@@ -35,8 +35,12 @@ filter "system:macosx"
         "Cocoa.framework",
         "IOKit.framework",
         "CoreVideo.framework",
-        "CoreFoundation.framework"
+        "CoreFoundation.framework",
+        "curl"
 	}
+    externalincludedirs { "/opt/homebrew/opt/curl/include" } -- ✅ Include headers
+    libdirs { "/opt/homebrew/opt/curl/lib" }
+    
 filter {}  
 
 filter "configurations:Debug"

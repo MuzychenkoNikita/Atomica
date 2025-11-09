@@ -42,7 +42,6 @@ void InitiateCore() {
     InitConstructorShader();
     InitAtomShader();
     
-    // fullscreen quad (triangle strip)
     float quadVertices[] = {
         -1.0f, -1.0f,
          1.0f, -1.0f,
@@ -66,8 +65,10 @@ void framebuffer_size_callback(GLFWwindow* window, int width, int height) {
 
 void RenderConstructor() {
     ConstructorFrameBuffer->BindBuffer();
-    glClearColor(0.2, 0.2, 1., 1.);
+    glClearColor(0.1f, 0.1f, 0.12f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
+
+    
     ConstructorFrameBuffer->UnBindBuffer();
 }
 
@@ -77,15 +78,14 @@ void RenderAtom() {
     glClear(GL_COLOR_BUFFER_BIT);
 
     unsigned int shaderID = AtomShader->GetID();
-    glUseProgram(shaderID); // <<< MUST come before glUniform calls
+    glUseProgram(shaderID);
 
     glUniform1f(glGetUniformLocation(shaderID, "iTime"), glfwGetTime());
     glUniform2f(glGetUniformLocation(shaderID, "iResolution"), 1000, 1000);
-    glUniform1i(glGetUniformLocation(shaderID, "numProtons"), 42);
-    glUniform1i(glGetUniformLocation(shaderID, "numNeutrons"), 42);
+    glUniform1i(glGetUniformLocation(shaderID, "numProtons"), numProtons);
+    glUniform1i(glGetUniformLocation(shaderID, "numNeutrons"), numNeutrons);
 
-    int electrons[7] = {2, 3, 5, 0, 0, 0, 0};
-    glUniform1iv(glGetUniformLocation(shaderID, "eCount"), 7, electrons);
+    glUniform1iv(glGetUniformLocation(shaderID, "eCount"), 7, eCount);
 
     glUniform1f(glGetUniformLocation(shaderID, "baseRadius"), 0.2f);
     glUniform1f(glGetUniformLocation(shaderID, "orbitGap"), 0.2f);
@@ -111,4 +111,8 @@ Atomica::FrameBuffer* AtomFrameBuffer = nullptr;
 
 GLuint quadVAO = 0;
 GLuint quadVBO = 0;
+
+int numProtons = 2;
+int numNeutrons = 4;
+int eCount[7] = {2, 3, 5, 0, 0, 0, 0};
 }

@@ -39,4 +39,8 @@ extern Atomica::ShaderProgram* ConstructorShader;
 
 extern GLuint quadVAO;
 extern GLuint quadVBO;
+
+extern int numProtons;
+extern int numNeutrons;
+extern int eCount[7];
 }
